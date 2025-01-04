@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-slides pager="true" class="welcome-slides">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slide-content">
+        <img [src]="slide.image" alt="welcome image" class="slide-image animate-in">
+        <h1>{{ slide.title }}</h1>
+        <p>{{ slide.description }}</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="auth-buttons ion-padding">
+    <ion-button expand="block" class="btn-primary rider-btn" (click)="navigateToAuth('rider')">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      Continue as Rider
+    </ion-button>
+
+    <ion-button expand="block" class="btn-primary driver-btn" (click)="navigateToAuth('driver')">
+      <ion-icon name="car-outline" slot="start"></ion-icon>
+      Continue as Driver
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="welcome-container">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <ion-button fill="clear" (click)="toggleTheme()">
+        <ion-icon [name]="themeIcon" slot="icon-only"></ion-icon>
+      </ion-button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <img src="assets/logo.svg" alt="Boje Taxi Logo" class="logo animate__animated animate__fadeIn">
+      <h1 class="animate__animated animate__fadeInUp">Boje Taxi</h1>
+      <p class="subtitle animate__animated animate__fadeInUp animate__delay-1s">Your trusted ride companion</p>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="feature-item">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <h3>Safe Rides</h3>
+        <p>Verified drivers and real-time tracking</p>
+      </div>
+      <div class="feature-item">
+        <ion-icon name="cash-outline"></ion-icon>
+        <h3>Best Prices</h3>
+        <p>Competitive rates and transparent pricing</p>
+      </div>
+      <div class="feature-item">
+        <ion-icon name="time-outline"></ion-icon>
+        <h3>24/7 Service</h3>
+        <p>Available whenever you need us</p>
+      </div>
+    </div>
+
+    <!-- Options Section -->
+    <div class="options-section">
+      <h2 class="section-title animate__animated animate__fadeInUp">Join Our Community</h2>
+      
+      <!-- Driver Card -->
+      <ion-card (click)="navigateToSignup('driver')" class="option-card driver-card animate__animated animate__fadeInLeft animate__delay-3s">
+        <ion-card-header>
+          <ion-icon name="car-sport-outline" size="large"></ion-icon>
+          <ion-card-title>Drive with Us</ion-card-title>
+          <ion-card-subtitle>Be your own boss</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ul>
+            <li>Flexible working hours</li>
+            <li>Competitive earnings</li>
+            <li>Weekly payouts</li>
+            <li>24/7 support</li>
+          </ul>
+          <ion-button expand="block" fill="clear" class="learn-more">
+            Start Driving
+            <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Rider Card -->
+      <ion-card (click)="navigateToSignup('rider')" class="option-card rider-card animate__animated animate__fadeInRight animate__delay-3s">
+        <ion-card-header>
+          <ion-icon name="person-outline" size="large"></ion-icon>
+          <ion-card-title>Ride with Us</ion-card-title>
+          <ion-card-subtitle>Travel with comfort</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ul>
+            <li>Quick pickup</li>
+            <li>Safe journeys</li>
+            <li>Affordable rates</li>
+            <li>24/7 availability</li>
+          </ul>
+          <ion-button expand="block" fill="clear" class="learn-more">
+            Start Riding
+            <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section animate__animated animate__fadeInUp animate__delay-4s">
+      <p>Already have an account? <a (click)="navigateToLogin()">Login</a></p>
+      
+      <!-- Social Proof -->
+      <div class="social-proof">
+        <div class="stat">
+          <h4>1M+</h4>
+          <p>Happy Riders</p>
+        </div>
+        <div class="stat">
+          <h4>50K+</h4>
+          <p>Active Drivers</p>
+        </div>
+        <div class="stat">
+          <h4>100+</h4>
+          <p>Cities</p>
+        </div>
+      </div>
+
+      <!-- App Store Buttons -->
+      <div class="app-stores">
+        <ion-button fill="clear">
+          <img src="assets/app-store.svg" alt="Download on App Store">
+        </ion-button>
+        <ion-button fill="clear">
+          <img src="assets/play-store.svg" alt="Get it on Play Store">
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

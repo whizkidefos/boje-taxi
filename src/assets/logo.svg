@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3880ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2dd36f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="55" fill="url(#grad)" />
+  <path d="M40 70 Q60 40 80 70" stroke="white" stroke-width="8" fill="none" />
+  <circle cx="40" cy="70" r="6" fill="white" />
+  <circle cx="80" cy="70" r="6" fill="white" />
+  <text x="60" y="90" text-anchor="middle" fill="white" font-family="Arial" font-weight="bold" font-size="14">BOJE</text>
+</svg>

@@ -1,0 +1,71 @@
+ion-content {
+  --background: var(--ion-color-light);
+}
+
+.welcome-slides {
+  height: 70%;
+  
+  .slide-content {
+    padding: 20px;
+    text-align: center;
+    
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ion-color-dark);
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 16px;
+      color: var(--ion-color-medium);
+      margin: 0;
+      padding: 0 20px;
+    }
+    
+    .slide-image {
+      width: 80%;
+      max-width: 300px;
+      margin: 40px auto;
+    }
+  }
+}
+
+.auth-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, var(--ion-background-color) 80%, transparent);
+  
+  ion-button {
+    margin-bottom: 12px;
+    
+    &.rider-btn {
+      --background: var(--ion-color-primary);
+    }
+    
+    &.driver-btn {
+      --background: var(--ion-color-secondary);
+    }
+    
+    ion-icon {
+      margin-right: 8px;
+    }
+  }
+}
+
+// Swiper pagination customization
+:host ::ng-deep .swiper-pagination {
+  bottom: 30% !important;
+  
+  .swiper-pagination-bullet {
+    background: var(--ion-color-medium);
+    opacity: 0.5;
+    
+    &-active {
+      background: var(--ion-color-primary);
+      opacity: 1;
+    }
+  }
+}
