@@ -1,0 +1,7 @@
+{
+  "name": "boje-taxi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
