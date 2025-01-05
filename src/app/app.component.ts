@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,7 @@ import { IonRouterOutlet } from '@ionic/angular';
   `,
   styleUrls: ['app.component.scss'],
   standalone: true,
-  imports: [IonicModule, IonRouterOutlet]
+  imports: [IonicModule]
 })
 export class AppComponent {
   constructor() {}

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 
 @NgModule({
